@@ -18,8 +18,8 @@ body {
 
 /* AVATARS */
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
 }
 button {
@@ -207,12 +207,63 @@ h1 {
   grid-template-columns: min-content 1fr min-content;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
+.video-info .avatar {
+  width: 50px;
+  height: 50px;
+}
 .action.subscribe {
   background-color: rgb(187, 39, 26);
 }
 
 .comments-section {
-  
+  padding: 20px 0;
+}
+.comments-section header {
+  display: flex;
+  align-items: baseline;
+  gap: 36px;
+  padding-bottom: 20px;
+}
+.comments-section header p {
+  font-size: 16px;
+}
+.comments-section header button.linklike {
+  font-size: 14px;
+  color:rgb(3, 3, 3);
+  font-weight: 500;
+}
+
+/* user comments */
+.comments-section section {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.comments-section input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  font-size: 14px;
+}
+.comments-section article p{
+  padding-bottom: 24px;
+}
+.comments-section article p:last-child{
+  padding-bottom: 0;
+}
+.comments-section a {
+  color: #065FD4;
+  text-decoration: none;
+}
+.comments-section .reaction {
+  display: flex;
+  align-items: baseline;
+  gap: 16px
+}
+.comments-section .reaction .avatar {
+  width: 14px;
+  height: 14px;
 }
 
 
